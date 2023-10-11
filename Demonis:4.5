@@ -1,6 +1,6 @@
     game:GetService("StarterGui"):SetCore("SendNotification", { 
 
-        Title = "DEMONIS V4.5 BETA TESTER";
+        Title = "DEMONIS V4.5 BETA NITRO";
 
         Text = "Demonis Beta Welcome -Nitro User- Thanks For You Support";
 
@@ -192,12 +192,6 @@ Light.LightingChanged:Connect(dofullbright)
 
 end)
 
-Section:NewButton("PLAYERS ESP", "esp", function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JEXBLUK/JEXBLUK-TEAM/main/ESP%20PLAYERS"))()
-
-end)
-
 Section:NewButton("BigZoom", "Changes MaxZoom To 50", function()
 Game.Players.LocalPlayer.CameraMaxZoomDistance = 50
 end)
@@ -212,14 +206,14 @@ end)
 local Section = Tab:NewSection("Ro-Ghoul")
 
 Section:NewButton("RG1", "Discover more things", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 end)
 
 local Section = Tab:NewSection("FurryInfec")
 
 Section:NewButton("HVH Gui", "Instant kill", function()
 
-loadstring(game:HttpGet("https://github.com/JEXBLUK-TEAM/Testings/blob/main/HvH%20Script"))()
+loadstring(game:HttpGetAsync("https://github.com/JEXBLUK-TEAM/Testings/blob/main/HvH%20Script"))()
 end)
 
 local Section = Tab:NewSection("BLOX FRUITS")
@@ -251,5 +245,5 @@ end)
 
 Section:NewButton("SimpleSpy", "Discover more things", function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()
 end)
