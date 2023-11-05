@@ -1,8 +1,8 @@
     game:GetService("StarterGui"):SetCore("SendNotification", { 
 
-        Title = "DEMONIS V4.5 BETA NITRO";
+        Title = "DEMONIS X CELESTIAL";
 
-        Text = "Demonis Beta Welcome -Nitro User- Thanks For You Support";
+        Text = "CELESTIAL CHANGED LETS UP YOUR NITRO POWER";
 
         Icon = "rbxthumb://type=Asset&id=13797050647&w=150&h=150"})
 
@@ -10,7 +10,7 @@
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("DEMONIS", "Synapse")
+local Window = Library.CreateLib("CELESTIAL", "Midnight")
 
 local Tab = Window:NewTab("Main")
 
@@ -192,6 +192,12 @@ Light.LightingChanged:Connect(dofullbright)
 
 end)
 
+Section:NewButton("PLAYERS ESP", "esp", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JEXBLUK/JEXBLUK-TEAM/main/ESP%20PLAYERS"))()
+
+end)
+
 Section:NewButton("BigZoom", "Changes MaxZoom To 50", function()
 Game.Players.LocalPlayer.CameraMaxZoomDistance = 50
 end)
@@ -206,14 +212,14 @@ end)
 local Section = Tab:NewSection("Ro-Ghoul")
 
 Section:NewButton("RG1", "Discover more things", function()
-loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 end)
 
 local Section = Tab:NewSection("FurryInfec")
 
 Section:NewButton("HVH Gui", "Instant kill", function()
 
-loadstring(game:HttpGetAsync("https://github.com/JEXBLUK-TEAM/Testings/blob/main/HvH%20Script"))()
+loadstring(game:HttpGet("https://github.com/JEXBLUK-TEAM/Testings/blob/main/HvH%20Script"))()
 end)
 
 local Section = Tab:NewSection("BLOX FRUITS")
@@ -245,5 +251,5 @@ end)
 
 Section:NewButton("SimpleSpy", "Discover more things", function()
 
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()
 end)
