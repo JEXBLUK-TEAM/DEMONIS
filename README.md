@@ -1,2 +1,2 @@
-# DEMONIS
+# CELESTIAL
 All Scripts
