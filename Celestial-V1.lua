@@ -97,17 +97,17 @@ Section:NewButton("AW1", "Discover more things", function()
 loadstring(game:HttpGet("https://paste.ee/r/Wo5Kj"))()
 end)
 
-local Section = Tab:NewSection("Ro-Ghoul")
+local Section = Tab:NewSection("DB RAGE")
 
-Section:NewButton("RG1", "Discover more things", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+Section:NewButton("DBR", "Discover more things", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xpa1n/Scripts/main/DBR.lua")()
 end)
 
 local Section = Tab:NewSection("FurryInfec")
 
 Section:NewButton("HVH Gui", "Instant kill", function()
 
-loadstring(game:HttpGet("https://github.com/JEXBLUK-TEAM/Testings/blob/main/HvH%20Script"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JEXBLUK-TEAM/Testings/main/HvH%20Script"))()
 end)
 
 local Section = Tab:NewSection("BLOX FRUITS")
