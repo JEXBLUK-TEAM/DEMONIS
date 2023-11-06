@@ -1,0 +1,5 @@
+local playerone = game.Players.LocalPlayer.Character
+
+local playertwo = game.Workspace:FindFirstChild(PlayerTeleportName)
+
+playerone.HumanoidRootPart.CFrame = playertwo.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
