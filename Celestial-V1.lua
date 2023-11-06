@@ -1,4 +1,4 @@
-,    game:GetService("StarterGui"):SetCore("SendNotification", { 
+    game:GetService("StarterGui"):SetCore("SendNotification", { 
 
         Title = "DEMONIS X CELESTIAL";
 
@@ -24,107 +24,13 @@ end)
 
 Section:NewButton("Noclip", "A simple noclip command, press 'V' to toggle.", function()
 
-noclip = false
-
-game:GetService('RunService').Stepped:connect(function()
-
-if noclip then
-
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-
-end
-
-end)
-
-plr = game.Players.LocalPlayer
-
-mouse = plr:GetMouse()
-
-mouse.KeyDown:connect(function(key)
-
-if key == "v" then
-
-noclip = not noclip
-
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-
-end
-
-end)
-
-end)
-
-Section:NewButton("ClickTP", "Click Teleportation.", function()
-
-    mouse = game.Players.LocalPlayer:GetMouse()
-
-tool = Instance.new("Tool")
-
-tool.RequiresHandle = false
-
-tool.Name = "ClickTP"
-
-tool.Activated:connect(function()
-
-local pos = mouse.Hit+Vector3.new(0,2.5,0)
-
-pos = CFrame.new(pos.X,pos.Y,pos.Z)
-
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
-
-end)
-
-tool.Parent = game.Players.LocalPlayer.Backpack
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JEXBLUK-TEAM/DEMONIS/main/Noclip"))()
 
 end)
 
 Section:NewToggle("Infinite Jump", "A simple Infinite Jump script.", function(state)
 
-    if state then
-
-_G.infinjump = true
-
-local Player = game:GetService("Players").LocalPlayer
-
-local Mouse = Player:GetMouse()
-
-Mouse.KeyDown:connect(function(k)
-
-if _G.infinjump then
-
-if k:byte() == 32 then
-
-Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
-
-Humanoid:ChangeState("Jumping")
-
-wait(0.1)
-
-Humanoid:ChangeState("Seated")
-
-end
-
-end
-
-end)
-
-local Player = game:GetService("Players").LocalPlayer
-
-local Mouse = Player:GetMouse()
-
-    else
-
-if _G.infinjump == true then
-
-_G.infinjump = false
-
-else
-
-_G.infinjump = true
-
-end
-
-end
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JEXBLUK-TEAM/DEMONIS/main/InfJump"))()
 
 end)
 
@@ -154,11 +60,7 @@ end)
 
 Section:NewTextBox("Goto", "Go to a player.", function(PlayerTeleportName)
 
-local playerone = game.Players.LocalPlayer.Character
-
-local playertwo = game.Workspace:FindFirstChild(PlayerTeleportName)
-
-playerone.HumanoidRootPart.CFrame = playertwo.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JEXBLUK-TEAM/DEMONIS/main/Goto"))()
 
 end)
 
@@ -174,21 +76,7 @@ end)
 
 Section:NewButton("Fullbright", "Getting see", function()
 
-local Light = game:GetService("Lighting")
-
-function dofullbright()
-
-Light.Ambient = Color3.new(1, 1, 1)
-
-Light.ColorShift_Bottom = Color3.new(1, 1, 1)
-
-Light.ColorShift_Top = Color3.new(1, 1, 1)
-
-end
-
-dofullbright()
-
-Light.LightingChanged:Connect(dofullbright)
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JEXBLUK-TEAM/DEMONIS/main/Fullbright"))()
 
 end)
 
@@ -229,27 +117,9 @@ _G.HohoVersion = "v3"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 end)
 
-Section:NewButton("Kay-Bloxfruits", "Cool Farm", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AXCScript/KayMobile/main/Script-Loader"))()
-end)
-
 
 local Tab = Window:NewTab("Support Guis")
 
 local Section = Tab:NewSection("Guis")
 
-Section:NewButton("Harshtech", "Discover more things", function()
-
---// Hub Made By: AdvanceFalling Team
--- Owner: YellowGreg#7993
--- Discord: https://discord.gg/MzeSqBBpCh
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/Loadstring/main/HarshTechV7.6-Pc-Or-Mobile.lua"))()
-
-
-end)
-
-Section:NewButton("SimpleSpy", "Discover more things", function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()
-end)
+local Section = Tab:NewSection("Sorry The Guis has not working :(")
