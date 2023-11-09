@@ -18,7 +18,7 @@ local Section = Tab:NewSection("Main")
 
 Section:NewButton("Fly", "A simple fly command, press 'E' to toggle.", function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TR011F4C3/PANDA/main/scripts/fly.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TR011F4C3/PANDA/main/scripts/fly.lua"))()
 
 end)
 
@@ -70,7 +70,7 @@ local Section = Tab:NewSection("Rake")
 
 Section:NewButton("Infinite Yield", "Launches Infinite Yield.", function()
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
 end)
 
@@ -100,6 +100,7 @@ end)
 local Section = Tab:NewSection("DB RAGE")
 
 Section:NewButton("DBR", "Discover more things", function()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xpa1n/Scripts/main/DBR.lua")()
 end)
 
@@ -107,7 +108,8 @@ local Section = Tab:NewSection("FurryInfec")
 
 Section:NewButton("HVH Gui", "Instant kill", function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JEXBLUK-TEAM/Testings/main/HvH%20Script"))()
+--none here--
+
 end)
 
 local Section = Tab:NewSection("BLOX FRUITS")
@@ -122,4 +124,4 @@ local Tab = Window:NewTab("Support Guis")
 
 local Section = Tab:NewSection("Guis")
 
-local Section = Tab:NewSection("Sorry The Guis has not working :(")
+local Section = Tab:NewSection("Sorry The Guis has not working")
