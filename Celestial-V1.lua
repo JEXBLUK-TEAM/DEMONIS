@@ -94,6 +94,7 @@ end)
 local Section = Tab:NewSection("Ability wars")
 
 Section:NewButton("AW1", "Discover more things", function()
+
 loadstring(game:HttpGet("https://paste.ee/r/Wo5Kj"))()
 end)
 
@@ -101,7 +102,7 @@ local Section = Tab:NewSection("DB RAGE")
 
 Section:NewButton("DBR", "Discover more things", function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xpa1n/Scripts/main/DBR.lua")()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xpa1n/Scripts/main/DBR.lua"))()
 end)
 
 local Section = Tab:NewSection("FurryInfec")
