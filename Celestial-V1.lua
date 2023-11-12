@@ -8,6 +8,7 @@
 
     Duration = 16;
 
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 local Window = Library.CreateLib("CELESTIAL", "Midnight")
@@ -64,6 +65,7 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JEXBLUK-TEAM/DEM
 
 end)
 
+
 local Tab = Window:NewTab("Games")
 
 local Section = Tab:NewSection("Rake")
@@ -87,7 +89,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/JEXBLUK/JEXBLUK-TEAM/
 end)
 
 Section:NewButton("BigZoom", "Changes MaxZoom To 50", function()
+
 Game.Players.LocalPlayer.CameraMaxZoomDistance = 50
+
 end)
 
 
@@ -109,15 +113,17 @@ local Section = Tab:NewSection("FurryInfec")
 
 Section:NewButton("HVH Gui", "Instant kill", function()
 
---none here--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JEXBLUK-TEAM/Scripts/main/HvH%20Script"))()
 
 end)
 
 local Section = Tab:NewSection("BLOX FRUITS")
 
 Section:NewButton("HoHoHub", "Op Farm", function()
+
 _G.HohoVersion = "v3"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+
 end)
 
 
